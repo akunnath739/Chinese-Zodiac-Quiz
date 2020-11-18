@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <title>Chinese Zodiac</title>
+    <script>
+function animalFinder()
+    {
+      //1. get the year from the user
+      //2. Using if-statements and mod%, determine animal
+      //3. Display animal
+      var num = document.getElementById("year").value;
+      if (num % 12 == 0);
+    {
+      document.getElementById("pic").innerHTML = "<img src = 'Monkey.jpg' id = 'animals'>";
+    }
+    if (num % 12 == 1)
+    {
+      document.getElementById("pic").innerHTML = "<img src = 'Rooster.jpg' id = 'animals'>";
+    }
+    if (num % 12 == 2)
+    {
+    document.getElementById("pic").innerHTML = "<img src = 'Dog.jpg' id = 'animals'>";
+    }
+    if (num % 12 == 3)
+    {
+    document.getElementById("pic").innerHTML = "<img src = 'Pig.jpg' id = 'animals'>";
+    }
+    if (num % 12 == 4)
+    {
+    document.getElementById("pic").innerHTML = "<img src = 'Rat.png' id = 'animals'>";
+    }
+    if (num % 12 == 5)
+    {
+    document.getElementById("pic").innerHTML = "<img src = 'Ox.jpg' id = 'animals'>";
+    }
+    if (num % 12 == 6)
+    {
+    document.getElementById("pic").innerHTML = "<img src = 'Tiger.jpg' id = 'animals'>";
+    }
+    if (num % 12 == 7)
+    {
+    document.getElementById("pic").innerHTML = "<img src = 'Rabbit.jpg' id = 'animals'>";
+    }
+    if (num % 12 == 8)
+    {
+    document.getElementById("pic").innerHTML = "<img src = 'Dragon.jpg' id = 'animals'>";
+    }
+    if (num % 12 == 9)
+    {
+    document.getElementById("pic").innerHTML = "<img src = 'Snake.jpg' id = 'animals'>";
+    }
+    if (num % 12 == 10)
+    {
+    document.getElementById("pic").innerHTML = "<img src = 'Horse.jpg' id = 'animals'>";
+    }
+    if (num % 12 == 11)
+    {
+    document.getElementById("pic").innerHTML = "<img src = 'Goat.png' id = 'animals'>";
+    }
+  }
+  </script>
+  <style>
+  body {
+    background-color: FireBrick;
+  }
+#button {
+  font-family: inherit;
+  text-decoration-color: gold;
+}
+
+#animals {
+  border-radius: 30px;
+  padding: 20px;
+  
+}
+  </style>
+</head>
+<body>
+  <h2 style = "color:gold">Find Your Chinese Zodiac!</h2>
+  <h3 style = "color: gold">Enter Your Birth Year</h3>
+  <input type= "text" id = "year">
+  <input type = "button" value = "Enter" onclick = "animalFinder()" id = "button">
+  <br>
+  <span id = "pic"></span>
+</body>
+</html>
